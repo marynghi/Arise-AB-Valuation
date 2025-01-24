@@ -11,7 +11,7 @@ To simulate the potential future price movements of Arise AB stock based on hist
 ## Methodology
 
 1. **Data Collection**: 
-   - Historical stock price data for Arise AB was obtained from a Yahoo Finance.
+   - Historical stock price data for Arise AB was obtained from a reliable financial source.
 2. **Log Returns**:
    - Calculated daily log returns to model the price changes.
 3. **Monte Carlo Simulation**:
@@ -19,25 +19,52 @@ To simulate the potential future price movements of Arise AB stock based on hist
      - Drift: Derived from the average historical return.
      - Volatility: Estimated from the standard deviation of historical returns.
    - Modeled stock prices using the equation:
-    <img width="166" alt="image" src="https://github.com/user-attachments/assets/c757d17c-e434-4fb9-a1ca-c07cd609a688" />
+     \[
+     S_t = S_0 \cdot e^{(drift + \sigma \cdot Z)}
+     \]
      where \(Z\) represents random values from a standard normal distribution.
 4. **Scenario Analysis**:
    - Ran thousands of iterations to create a range of potential outcomes.
    - Visualized results to identify potential price distributions and risks.
 
-## Key Results
+## Results
 
-###Best & Worst Cases
-1. Worst Case: SEK 8.85 per share
-2. Average Case: SEK 40.01 per share
-3. Best Case: SEK 148.06 per share
-###Confidence Intervals
-1 Sigma (1 S.D.): 68% confidence that the price after 250 days will fall between SEK 24.13 and SEK 55.88.
-2 Sigma (2 S.D.): 95% confidence that the price after 250 days will fall between SEK 8.26 and SEK 71.76.
-###Latest Price and Probabilities
-Latest Price (S₀): SEK 37.10 per share
-Probability of Price > Latest Price at Day 250: 50.35%
+### Best & Worst Cases
+- **Worst Case:** SEK 8.85 per share
+- **Average Case:** SEK 40.01 per share
+- **Best Case:** SEK 148.06 per share
+
+### Confidence Intervals
+- **1 Sigma (1 S.D.)**: 68% confidence that the price after 250 days will fall between **SEK 24.13** and **SEK 55.88**.
+- **2 Sigma (2 S.D.)**: 95% confidence that the price after 250 days will fall between **SEK 8.26** and **SEK 71.76**.
+
+### Latest Price and Probabilities
+- **Latest Price (S₀):** SEK 37.10 per share
+- **Probability of Price > Latest Price at Day 250:** 50.35%
+
 These results provide a robust framework for assessing potential future price movements, highlighting key risks and opportunities.
+
+## Files in the Repository
+
+- `monte_carlo_simulation.py`: Python script for the Monte Carlo simulation.
+- `arise_stock_data.csv`: Historical stock price data (sanitized for confidentiality).
+- `simulation_results.png`: Visualization of simulated price paths and probability distributions.
+- `report.pdf`: Detailed explanation of methodology and findings.
+
+## How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo-name.git
+   ```
+2. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the simulation script:
+   ```bash
+   python monte_carlo_simulation.py
+   ```
 
 ## Tools & Libraries
 
