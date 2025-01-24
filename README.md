@@ -44,28 +44,6 @@ To simulate the potential future price movements of Arise AB stock based on hist
 
 These results provide a robust framework for assessing potential future price movements, highlighting key risks and opportunities.
 
-## Files in the Repository
-
-- `monte_carlo_simulation.py`: Python script for the Monte Carlo simulation.
-- `arise_stock_data.csv`: Historical stock price data (sanitized for confidentiality).
-- `simulation_results.png`: Visualization of simulated price paths and probability distributions.
-- `report.pdf`: Detailed explanation of methodology and findings.
-
-## How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo-name.git
-   ```
-2. Install required packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the simulation script:
-   ```bash
-   python monte_carlo_simulation.py
-   ```
-
 ## Tools & Libraries
 
 - **Python**: Core programming language
