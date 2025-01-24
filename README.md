@@ -27,14 +27,14 @@ To simulate the potential future price movements of Arise AB stock based on hist
 
 ## Key Results
 
-Best & Worst Cases
-Worst Case: SEK 8.85 per share
-Average Case: SEK 40.01 per share
-Best Case: SEK 148.06 per share
-Confidence Intervals
+###Best & Worst Cases
+1. Worst Case: SEK 8.85 per share
+2. Average Case: SEK 40.01 per share
+3. Best Case: SEK 148.06 per share
+###Confidence Intervals
 1 Sigma (1 S.D.): 68% confidence that the price after 250 days will fall between SEK 24.13 and SEK 55.88.
 2 Sigma (2 S.D.): 95% confidence that the price after 250 days will fall between SEK 8.26 and SEK 71.76.
-Latest Price and Probabilities
+###Latest Price and Probabilities
 Latest Price (S₀): SEK 37.10 per share
 Probability of Price > Latest Price at Day 250: 50.35%
 These results provide a robust framework for assessing potential future price movements, highlighting key risks and opportunities.
